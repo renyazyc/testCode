@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/zyc017/testCode/issues"
   },
-  "homepage": "https://github.com/zyc017/testCode#readme"
+  "homepage": "https://github.com/zyc017/testCode#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.15.6",
+    "redux-thunk": "^2.2.0"
+  }
 }
