@@ -1,0 +1,19 @@
+{
+  "name": "zyc_test",
+  "version": "1.0.0",
+  "description": "test code",
+  "main": "测试各种前端框架插件",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyc017/testCode.git"
+  },
+  "author": "zyc017",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyc017/testCode/issues"
+  },
+  "homepage": "https://github.com/zyc017/testCode#readme"
+}
