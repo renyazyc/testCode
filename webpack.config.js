@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('./index.css');
 
+
 module.exports = {
     devtool: "source-map",
     entry: './src/index.jsx',

@@ -1,4 +1,5 @@
-import React,{Component,PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import {render} from 'react-dom';
 import { connect,Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -17,10 +18,16 @@ class Counter extends Component {
     render() {
         const { value, onIncreaseClick } = this.props;
         return (
-            <div>
+            /*<div>
                 <span>{value}</span>
                 <button onClick={onIncreaseClick}>Increase</button>
+            </div>*/
+            <div>
+                <div style={{width:200,float:'left',background:'red',height:200}}></div>
+                <div style={{}}></div>
+                <div style={{width:200,float:'right',background:'blue',height:200}}></div>
             </div>
+
         )
     }
 }

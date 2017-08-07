@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <title>test Code</title>
     <link rel="stylesheet" href="/dist/index.css">
+    <style>
+        body,ul,li{ padding:0; margin:0;}
+        ul,li{ list-style:none;}
+        .container{ height:210px; width:460px; border:5px solid #000;}
+        ul{ height:210px; overflow:hidden; margin-right:-20px;}/*一个负的margin-right,相当于把ul的宽度增加了20px*/
+        li{ height:100px; width:100px; background:#09F; float:left; margin-right:20px; margin-bottom:10px;}
+
+        #wrap{ width: 100%;height: 100px; background-color: #fff;float: left;}
+        #wrap #center{ margin:0 210px; height: 100px;background-color: #ffe6b8; }
+        #left_margin,#right_margin{ float: left;width: 200px;height: 100px;background-color: darkorange }
+        #left_margin {margin-left: -100%; background-color: lightpink}
+        #right_margin{margin-left: -200px;}
+
+        #middle{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+            position: absolute;
+            top:50%;
+            left: 50%;
+
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/javascript" src="/dist/bundle.js"></script>
+    <!--<div class="container">-->
+        <!--<ul>-->
+            <!--<li>子元素1</li>-->
+            <!--<li>子元素2</li>-->
+            <!--<li>子元素3</li>-->
+            <!--<li>子元素4</li>-->
+            <!--<li>子元素5</li>-->
+            <!--<li>子元素6</li>-->
+            <!--<li>子元素7</li>-->
+            <!--<li>子元素8</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+    <!--<h3>使用margin负值法进行布局</h3>-->
+    <!--<div id = "wrap">-->
+        <!--<div id = "center"></div>-->
+    <!--</div>-->
+    <!--<div id = "left_margin"></div>-->
+    <!--<div id = "right_margin"></div>-->
+
+
+    <div id="middle"></div>
+    <script type="text/javascript" src="/dist/index.js"></script>
 </body>
 </html>
