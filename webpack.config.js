@@ -1,16 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('./index.css');
 
 
 module.exports = {
     devtool: "source-map",
-    entry: './src/index.jsx',
+    entry: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/dev-server','./src/index.jsx'],
     output: {
         path:__dirname+'/dist',
         filename: 'index.js',
-        // publicPath:'/dist/'
+        publicPath:'/dist/'
     },
     module: {
         rules: [
@@ -61,9 +62,10 @@ module.exports = {
         ]
     },
     plugins:[
-        extractCSS
+        extractCSS,
+        new webpack.HotModuleReplacementPlugin()
     ],
     resolve: {
-        extensions: ['.js', '.jsx', '.less', '.scss', '.css']
+        extensions: ['.less', '.scss', '.css']
     }
 }
