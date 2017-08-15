@@ -7,11 +7,11 @@ const extractCSS = new ExtractTextPlugin('./index.css');
 
 module.exports = {
     devtool: "source-map",
-    entry: ['webpack-dev-server/client?http://localhost:8080', 'webpack/hot/dev-server','./src/index.jsx'],
+    entry: ['webpack-dev-server/client?http://localhost:3000','webpack/hot/dev-server','./src/index.jsx'],
     output: {
         path:__dirname+'/dist',
         filename: 'index.js',
-        publicPath:'/dist/'
+        publicPath:'/'
     },
     module: {
         rules: [
@@ -66,6 +66,6 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     resolve: {
-        extensions: ['.less', '.scss', '.css']
+        extensions: ['.js','.jsx']
     }
 }
