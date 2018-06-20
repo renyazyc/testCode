@@ -1,7 +1,14 @@
 import React from 'react'
-import {Route, IndexRoute,Redirect} from 'react-router'
+import {BrowserRouter as Router} from 'react-router-dom'
+import {Switch, Route} from 'react-router';
 import Counter from './components/increase'
+import Test from './test';
 
 export default ()=>(
-    <Route path="/" component={Counter}/>
+  <Router>
+    <Switch>
+      <Route exact path="/"  component={Counter} />
+      <Route path="/abc" component={Test} />
+    </Switch>
+  </Router>
 )

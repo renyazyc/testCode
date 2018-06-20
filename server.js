@@ -3,7 +3,7 @@ const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
 const child_process = require("child_process");//子进程，nodejs本身的模块，不用install
 
-const port=3000;
+const port=9000;
 
 switch (process.platform) {
     case 'wind32':
@@ -22,12 +22,15 @@ const URL = 'http://localhost:'+port;
 
 
 new WebpackDevServer(webpack(config), { // Start a server
-    contentBase:'/dist',
+    publicPath: "/sat",
     hot: true, // With hot reloading
     inline: false,
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/sat/index.html'
+    },
     quiet: false, // Without logging
-    proxy: {}
+    proxy: {},
+    disableHostCheck: true
 }).listen(port, 'localhost', function (err, result) {
     if (err) {
         console.log(err);

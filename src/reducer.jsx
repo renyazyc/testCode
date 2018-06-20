@@ -1,4 +1,8 @@
 // Reducer
+
+import {fetch} from 'mfetch';
+
+
 export function counter(state = { count: 0 }, action) {
     const count = state.count
     switch (action.type) {

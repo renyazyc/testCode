@@ -1,35 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>test Code</title>
-    <link rel="stylesheet" href="/index.css">
-    <style>
-        body,ul,li{ padding:0; margin:0;}
-        ul,li{ list-style:none;}
-        .container{ height:210px; width:460px; border:5px solid #000;}
-        ul{ height:210px; overflow:hidden; margin-right:-20px;}/*一个负的margin-right,相当于把ul的宽度增加了20px*/
-        li{ height:100px; width:100px; background:#09F; float:left; margin-right:20px; margin-bottom:10px;}
-
-        #wrap{ width: 100%;height: 100px; background-color: #fff;float: left;}
-        #wrap #center{ margin:0 210px; height: 100px;background-color: #ffe6b8; }
-        #left_margin,#right_margin{ float: left;width: 200px;height: 100px;background-color: darkorange }
-        #left_margin {margin-left: -100%; background-color: lightpink}
-        #right_margin{margin-left: -200px;}
-
-        #middle{
-            width: 100px;
-            height: 100px;
-            background: #f00;
-            position: absolute;
-            top:50%;
-            left: 50%;
-
-        }
-    </style>
+    <!--<script type='text/javascript' src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
+    <!--<link href="//g-assets.daily.taobao.net/ais-fed/aone-layout/1.0.27/k.aliyun.min.css" rel="stylesheet">-->
+    <!--<script src="//g-assets.daily.taobao.net/ais-fed/aone-layout/1.0.27/k.aliyun.min.js" type="text/javascript"></script>-->
+    <!-- <link rel="stylesheet" href="./assets/header/index.css"> -->
+    <!--<link href="https://g.alicdn.com/ais-fed/aone-layout/1.0.52/aone.layout.ant.cloud.css" rel="stylesheet">-->
+    <!--<script src="https://g.alicdn.com/ais-fed/aone-layout/1.0.52/aone.layout.ant.cloud.js" type="text/javascript"></script>-->
+    <!--<link href="http://assets.aliyun.com/ais-fed/aone-layout/1.0.52/aone.layout.css" rel="stylesheet">-->
+    <!--<script src="http://assets.aliyun.com/ais-fed/aone-layout/1.0.52/aone.layout.js" type="text/javascript"></script>-->
+    
 </head>
-<body>
-    <div id="root"></div>
+<body style="height: 100%">
+
+<script>
+
+// const navData = {
+//   //三级导航
+//   navs: [
+//     {
+//       key: 'home',
+//       text: '首页',
+//       //当前高亮
+//
+//       link: '#'
+//     },
+//     {
+//       key: 'permit',
+//       text: '权限',
+//       active: true,
+//       link: '#'
+//     },
+//     {
+//       key: 'codereview',
+//       text: '代码评审',
+//       link: '#'
+//     },
+//     {
+//       key: 'reviewsubmit',
+//       text: '审核提交',
+//       link: '#'
+//     },
+//     {
+//       key: 'favorite',
+//       text: '常用链接',
+//       link: '#'
+//     }
+//   ],
+//   //四级导航
+//   nextNavs: [
+//     {
+//       key: 'change',
+//       text: '变更配置',
+//       active: true,
+//       link: '#'
+//     },
+//     {
+//       key: 'flow',
+//       text: '流程配置',
+//       link: '#'
+//     },
+//     {
+//       key: 'server',
+//       text: '服务器信息',
+//       link: '#'
+//     },
+//     {
+//       key: 'net',
+//       text: '网络信息',
+//       link: '#'
+//     },
+//     {
+//       key: 'secure',
+//       text: '安全信息',
+//       link: '#'
+//     }
+//   ]
+// };
+// new AoneLayout({
+//   hasSidebar: true,
+//   antCloudJsPath: "https://g.alicdn.com/ais-fed/aone-layout/1.0.52/ant.eco.cloud.js",
+//   user: {
+//     staffId: '86074',
+//     name: '二凢'
+//   },
+//   navs:{
+//     type:'data',
+//     data:navData
+//   },
+//   env: 'daily'
+// });
+
+</script>
+    <!--<div class="aone-content"></div>-->
+     <!--<div id="antCloud"></div> -->
+     <div id="root" ></div>
+    <!--<div style="display:flex">-->
+        <!--<div style="flex:1;height:300px;background:red">-->
+            <!--<div style="height:100px;background:#09F"></div>-->
+            <!--<div style="height:100px;background:#ffe6b8"></div>-->
+            <!--<div style="height:100px;background:#ffe6b8"></div>-->
+        <!--</div>-->
+        <!--<div style="flex:1;height:300px;background:blue"></div>-->
+        <!--<div style="flex:1;height:300px;background:green"></div>-->
+        <!--<div style="flex:1;height:300px;background:green"></div>-->
+    <!--</div>-->
+    <!--<script type="text/javascript">-->
+        <!--const dom = document.querySelector('input');-->
+<!--//        dom.addEventListener('change',function (e) {-->
+<!--//          if(e.target.nodeType == 'input'){-->
+<!--//            alert(1)-->
+<!--//          }-->
+<!--//        })-->
+        <!--dom.onchange=function () {-->
+          <!--alert(1)-->
+        <!--}-->
+    <!--</script>-->
     <!--<div class="container">-->
         <!--<ul>-->
             <!--<li>子元素1</li>-->
@@ -49,11 +138,14 @@
     <!--</div>-->
     <!--<div id = "left_margin"></div>-->
     <!--<div id = "right_margin"></div>-->
-
-
+    <!--<div style="height: 100%;font-size: 0">-->
+        <!--<div style="height: 100px;width:300px;background: red;display: inline-block"></div>-->
+        <!--<div style="height: 100px;width:300px;background: green;display: inline-block"></div>-->
+    <!--</div>-->
 
 
     <!--<div id="middle"></div>-->
-    <script type="text/javascript" src="/index.js"></script>
+    <!-- <script type="text/javascript" src="./assets/header/index.js"></script> -->
+    <!--<script type="text/javascript" src="./dist/index.js"></script>-->
 </body>
 </html>
